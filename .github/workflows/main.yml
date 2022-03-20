@@ -32,7 +32,7 @@ jobs:
           
       - name: Deploy Blog
         env:
-          DEPLOY_BLOG: ${{Dependabot secrets.DEPLOY_BLOG}}
+          DEPLOY_BLOG: ${{secrets.DEPLOY_BLOG}}
         run: 
           git config --global user.name "coisinimp"
           git config --global user.email "2650485280@qq.com"
